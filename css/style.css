@@ -201,29 +201,42 @@ i {
 }
 
 .owl-prev {
-    left: 1.9rem;
+    left: 1.7rem;
 }
 .owl-next {
-    right: 5rem; /* -1.9 */
+    right: -1.7rem; /* -1.9 */
 }
-.owl-next:before{
+.owl-prev:before, .owl-next:before{
     content: '';
     position: absolute;
-    right: 0.625rem;
-    /*top: calc(50% - 3.313rem);*/
     width: 4.668rem;
     height: 4.668rem;
     border: 1px solid rgba(255, 255, 255, 0.8);
     display:block;
     transform: rotate(45deg);
-    /*background-color: blue;*/
+    overflow: hidden;
+}
+.owl-prev:before{
+    left: -2.625rem;
+}
+.owl-next:before{
+    right: 0.625rem;
+}
+.owl-prev:after {
+    font-family: fontello;
+    content: '\e801';
+    position: absolute;
+    font-size: 1.6rem;
+    top: 1.52rem;
+    right: 0;
 }
 .owl-next:after{
     font-family: fontello;
     content: '\e800';
     position: absolute;
     font-size: 1.6rem;
-;
+    top: 1.52rem;
+    right: 2.6rem;
 }
 /*.left_wrap {
     left: 0;
