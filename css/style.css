@@ -29,7 +29,7 @@ html {
     position: fixed;
     top:0;
     z-index: 30;
-    /*height: 4.375rem;*/
+    font-family: 'exo_2.0black', Arial, sans-serif;
 }
 
 /* ________logo_________ */
@@ -162,10 +162,11 @@ html {
 }
 h2{
     font-family: 'exo_2.0black', Arial, sans-serif;
-    font-size: 3rem;
-    line-height: 2rem;
+    font-size: 2.88rem;
+    line-height: 2.63rem;
     text-transform: uppercase;
     font-weight: 900;
+    /*margin: 10rem 3rem 0;*/
 }
 i {
     width: 0.5rem;
@@ -179,14 +180,6 @@ i {
 
 /* ______________________buttons_______________ */
 
-/*.left_wrap, .right_wrap {
-    width: 4.668rem;
-    height: 6.625rem;
-    overflow: hidden;
-    position: absolute;
-    top: calc(50% - 3.313rem);
-    z-index: 10;
-}*/
 .owl-prev,.owl-next {
     position: absolute;
     font-size: 3.75rem;
@@ -242,30 +235,13 @@ i {
 .owl-next:hover:before{
     background: rgba(255, 255, 255, 0.2);
 }
-/*.left_wrap {
-    left: 0;
-}
-
-.right_wrap {
-    right: 0
-}*/
-
-.left {
-    position: absolute;
-    left: -0.9375rem;
-    top: 1rem;
-}
-.right{
-    position:absolute;
-    right: -0.9375rem;
-    top: 1rem;
-}
-.plus{
+.rh-button-absolute{
     position: absolute;
     bottom:0;
     right:0;
 }
-.icon-plus{
+.icon-plus,
+.icon-link{
     display: block;
     text-decoration: none;
 }
@@ -279,16 +255,18 @@ i {
     background: rgba(255, 255, 255, 0.2);
     z-index: 10;
 }
-.rotate_right{
+.rotate-right{
     transform: rotate(45deg);
 }
-
-.rotate_left{
+.rotate-left{
     transform: rotate(-45deg);
 }
 
-
 /* _________end buttons */
+
+.rhombus-translate-rotate{
+    transform: translateX(-40%) rotate(45deg);
+}
 
 
 
