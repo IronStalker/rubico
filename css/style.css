@@ -227,7 +227,7 @@ i {
     content: '\e801';
     position: absolute;
     font-size: 1.6rem;
-    top: 1.52rem;
+    line-height:4.668rem;
     right: 0;
 }
 .owl-next:after{
@@ -235,8 +235,12 @@ i {
     content: '\e800';
     position: absolute;
     font-size: 1.6rem;
-    top: 1.52rem;
+    line-height:4.668rem;
     right: 2.6rem;
+}
+.owl-prev:hover:before,
+.owl-next:hover:before{
+    background: rgba(255, 255, 255, 0.2);
 }
 /*.left_wrap {
     left: 0;
