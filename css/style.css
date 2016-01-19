@@ -193,7 +193,7 @@ i {
     bottom: calc(50% + 2.33rem);
     color: #fff;
     z-index: 20;
-    background-color: red;
+    /*background-color: red;*/
     width: 0;
     height: 0;
 
@@ -246,8 +246,7 @@ i {
     bottom:0;
     right:0;
 }
-.icon-plus,
-.icon-link{
+.icon{
     display: block;
     text-decoration: none;
 }
@@ -270,10 +269,6 @@ i {
 
 /* _________end buttons */
 
-/*.item:nth-of-type(2) h2,
-.item:nth-of-type(4) h2{
-    margin-top: 5rem;
-}*/
 .rhombus-translate-rotate{
     transform: translateX(-40%) rotate(45deg);
 }
@@ -282,7 +277,7 @@ i {
 
                                                             /*Section 2 About us*/
 
-.section_2{
+.about{
     height: 100vh;
     max-height: 1000px;
     /*min-height: 550px;*/
@@ -290,7 +285,7 @@ i {
     position: relative;
     padding-top:4rem;
 }
-.section_2>.inner,
+.about>.inner,
 .section_3>.inner{
     display:table;
     width: 100vw;
@@ -299,61 +294,60 @@ i {
 .black>i{
     background: black;
 }
-.scroll{
+.scroll,
+.scroll-down{
     position: absolute;
-    top:-3.313rem;
     right:calc(50% - 3.313rem);
     z-index: 10;
+}
+.scroll{
+    top:-3.313rem;
 }
 .scroll > img{
     width: 6.625rem;
     height: 6.625rem;
 }
-.text2{
+.scroll-down{
+    width: 4.668rem;
+    height: 4.668rem;
+    bottom:-2.334rem;
+    background-color: #cd2929;
+    display: block;
+}
+.icon-down-open-big:before {
+    transform: rotate(-45deg) translateY(0.3rem);
+}
+.about-us-text{
     text-align: center;
     color: black;
     display: table-cell;
     vertical-align: middle;
 }
-.section_3>.inner>.text2,
-.section_4>.inner>.text2{
-    text-align: center;
-    color: black;
-    display: block;
-    }
-/*.text_big{
-    font-size: 2.875rem;
-    text-transform: uppercase;
-}*/
-.text2 .text_big .sep>i{
-    background: black;
+.logo-white{
+    margin: 2.5rem 2.5rem 3rem;
+
 }
-.logo_white{
-    padding: 2.5rem;
+
+/* ______________social icons________________ */
+.social-icons .rh-button {
+    margin: 0 1.8rem;
+    transform: rotate(45deg);
 }
-.sprite{
-    display: inline-block;
-    text-align: center;
+.social-icons .rh-button:hover{
+    background: rgba(26, 180, 239, 0.2);
+
+    border-color: #1ab4ef;
+    z-index: 10;
 }
-.social_icon{
-    display: inline-block;
-    width:75px;                        /*4.688rem*/
-    height: 75px;
-    margin: 0 0.9rem;
-    background: url(../img/sprite/sprite.png) no-repeat;
+.social-icons [class*="icon-"]:before {
+    transform: rotate(-45deg);
+    /*color:red;*/
 }
-.fb{    background-position:0 0}
-.tw{    background-position: -75px 0;}
-.dr{    background-position: -150px 0;  }
-.tb{    background-position: -225px 0;  }
-.in{    background-position: -300px 0;  }
-.pi{    background-position: -375px 0;  }
-.fb:hover {    background-position: 0 -75px;  }
-.tw:hover {    background-position: -75px -75px;  }
-.dr:hover {    background-position: -150px -75px;  }
-.tb:hover {    background-position: -225px -75px;  }
-.in:hover {    background-position: -300px -75px;  }
-.pi:hover {    background-position: -375px -75px;  }
+.social-icons [class*="icon-"]:hover:before {
+    color: #1ab4ef;
+}
+
+/* ___________________portfolio section________________________ */
 
 .section_3, .section_4 {
     /*min-height: 800px;*/
@@ -394,6 +388,12 @@ i {
 
                                                                 /*Rhombus_photogallery*/
 
+.section_3>.inner>.text2,
+.section_4>.inner>.text2{
+    text-align: center;
+    color: black;
+    display: block;
+}
 .container_rhombus_photogallery {
     max-width: 1160px;
     width: 100%;
