@@ -269,10 +269,6 @@ i {
 
 /* _________end buttons */
 
-/*.item:nth-of-type(2) h2,
-.item:nth-of-type(4) h2{
-    margin-top: 5rem;
-}*/
 .rhombus-translate-rotate{
     transform: translateX(-40%) rotate(45deg);
 }
@@ -350,32 +346,6 @@ i {
 .social-icons [class*="icon-"]:hover:before {
     color: #1ab4ef;
 }
-
-/* ________________sprite________________ */
-
-/*.sprite{
-    display: inline-block;
-    text-align: center;
-}
-.social_icon{
-    display: inline-block;
-    width:75px;                        *//*4.688rem*//*
-    height: 75px;
-    margin: 0 0.9rem;
-    background: url(../img/sprite/sprite.png) no-repeat;
-}
-.fb{    background-position:0 0}
-.tw{    background-position: -75px 0;}
-.dr{    background-position: -150px 0;  }
-.tb{    background-position: -225px 0;  }
-.in{    background-position: -300px 0;  }
-.pi{    background-position: -375px 0;  }
-.fb:hover {    background-position: 0 -75px;  }
-.tw:hover {    background-position: -75px -75px;  }
-.dr:hover {    background-position: -150px -75px;  }
-.tb:hover {    background-position: -225px -75px;  }
-.in:hover {    background-position: -300px -75px;  }
-.pi:hover {    background-position: -375px -75px;  }*/
 
 /* ___________________portfolio section________________________ */
 
