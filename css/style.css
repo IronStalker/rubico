@@ -193,7 +193,7 @@ i {
     bottom: calc(50% + 2.33rem);
     color: #fff;
     z-index: 20;
-    background-color: red;
+    /*background-color: red;*/
     width: 0;
     height: 0;
 
@@ -246,8 +246,7 @@ i {
     bottom:0;
     right:0;
 }
-.icon-plus,
-.icon-link{
+.icon{
     display: block;
     text-decoration: none;
 }
@@ -282,7 +281,7 @@ i {
 
                                                             /*Section 2 About us*/
 
-.section_2{
+.about{
     height: 100vh;
     max-height: 1000px;
     /*min-height: 550px;*/
@@ -290,7 +289,7 @@ i {
     position: relative;
     padding-top:4rem;
 }
-.section_2>.inner,
+.about>.inner,
 .section_3>.inner{
     display:table;
     width: 100vw;
@@ -299,45 +298,68 @@ i {
 .black>i{
     background: black;
 }
-.scroll{
+.scroll,
+.scroll-down{
     position: absolute;
-    top:-3.313rem;
     right:calc(50% - 3.313rem);
     z-index: 10;
+}
+.scroll{
+    top:-3.313rem;
 }
 .scroll > img{
     width: 6.625rem;
     height: 6.625rem;
 }
-.text2{
+.scroll-down{
+    width: 4.668rem;
+    height: 4.668rem;
+    bottom:-2.334rem;
+    background-color: #cd2929;
+    display: block;
+}
+.icon-down-open-big:before {
+    transform: rotate(-45deg) translateY(0.3rem);
+}
+.about-us-text{
     text-align: center;
     color: black;
     display: table-cell;
     vertical-align: middle;
 }
-.section_3>.inner>.text2,
-.section_4>.inner>.text2{
-    text-align: center;
-    color: black;
-    display: block;
-    }
-/*.text_big{
-    font-size: 2.875rem;
-    text-transform: uppercase;
-}*/
-.text2 .text_big .sep>i{
-    background: black;
+.logo-white{
+    margin: 2.5rem 2.5rem 3rem;
+
 }
-.logo_white{
-    padding: 2.5rem;
+
+/* ______________social icons________________ */
+.social-icons .rh-button {
+    margin: 0 1.8rem;
+    transform: rotate(45deg);
 }
-.sprite{
+.social-icons .rh-button:hover{
+    background: rgba(26, 180, 239, 0.2);
+
+    border-color: #1ab4ef;
+    z-index: 10;
+}
+.social-icons [class*="icon-"]:before {
+    transform: rotate(-45deg);
+    /*color:red;*/
+}
+.social-icons [class*="icon-"]:hover:before {
+    color: #1ab4ef;
+}
+
+/* ________________sprite________________ */
+
+/*.sprite{
     display: inline-block;
     text-align: center;
 }
 .social_icon{
     display: inline-block;
-    width:75px;                        /*4.688rem*/
+    width:75px;                        *//*4.688rem*//*
     height: 75px;
     margin: 0 0.9rem;
     background: url(../img/sprite/sprite.png) no-repeat;
@@ -353,7 +375,9 @@ i {
 .dr:hover {    background-position: -150px -75px;  }
 .tb:hover {    background-position: -225px -75px;  }
 .in:hover {    background-position: -300px -75px;  }
-.pi:hover {    background-position: -375px -75px;  }
+.pi:hover {    background-position: -375px -75px;  }*/
+
+/* ___________________portfolio section________________________ */
 
 .section_3, .section_4 {
     /*min-height: 800px;*/
@@ -394,6 +418,12 @@ i {
 
                                                                 /*Rhombus_photogallery*/
 
+.section_3>.inner>.text2,
+.section_4>.inner>.text2{
+    text-align: center;
+    color: black;
+    display: block;
+}
 .container_rhombus_photogallery {
     max-width: 1160px;
     width: 100%;
