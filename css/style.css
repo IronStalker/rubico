@@ -503,23 +503,25 @@ i {
     margin-top: calc((((11% * 1.42) - 11%)) * (-1));
 }
 
-                                                  /*Rhombus_progress*/
+/* ___________________________skills_______________________ */
+
 .skills {
     background: url(../img/bg-portfolio.png) 0 0;
     min-height: 100vh;
     padding-top: 8.2rem;
     padding-bottom: 2.5rem;
 }
-.rhombus_wrap{
+                                       /*Rhombus_progress*/
+.rhombus-wrap{
     display: inline-block;
     margin-right: calc((100% - 5*7.875rem)/4);
 }
-.rhombus_progress{
+.rhombus-progress{
     width: 100%;
     height: 18.75rem;
     font-size: 0;
 }
-.rhombus_border{
+.rhombus-border{
     border: 1px solid #cd2929;
     height: 6.25rem;
     /*margin: 250px auto;*/
@@ -535,7 +537,7 @@ i {
     text-transform: uppercase;
     font-weight: bold;
 }
-.rhombus_animate {
+.rhombus-animate {
     background-color: #cd2929;
     width: 8.875rem;
     height: 8.875rem;
@@ -545,23 +547,13 @@ i {
     transform: rotate(-45deg);
     transform-origin: 0 0 0;
 }
-/*.rhombus_progress>div{
-    display: inline-block;
-    margin-top: 80px;
-    margin-right: calc((100% - 5*110px)/4);
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-}*/
-.rhombus_wrap:nth-of-type(5)
-{
+.rhombus-wrap:nth-of-type(5){
     margin-right: 0;
 }
-.rhombus_wrap:nth-of-type(1)
-{
+.rhombus-wrap:nth-of-type(1){
     margin-left: 1.25rem;
 }
-.rhombus_skill {
+.rhombus-skill {
     font-size: 2.5rem;
     color: #f5f5f5;
     line-height: 6.25rem;
@@ -569,7 +561,7 @@ i {
     transform: rotate(135deg);
     vertical-align: middle;
 }
-.rhombus_title {
+.rhombus-title {
     font-size: 1.5rem;
     margin-top: 2.5rem;
     margin-left: -1.313rem;
@@ -579,61 +571,58 @@ i {
     text-transform: uppercase;
     font-weight: bold;
 }
-/*.rhombus_title:nth-of-type(1){
-    margin-left: -21px;
-}*/
-.rhombus_animate_designing {
-    animation: progress_up_designing 5s forwards;
+.rhombus-animate-designing {
+    animation: progress-up-designing 5s forwards;
 }
-.rhombus_animate_developing {
-    animation: progress_up_developing 5s forwards;
+.rhombus-animate-developing {
+    animation: progress-up-developing 5s forwards;
 }
-.rhombus_animate_marketing {
-    animation: progress_up_marketing 5s forwards;
+.rhombus-animate-marketing {
+    animation: progress-up-marketing 5s forwards;
 }
-.rhombus_animate_consulting {
-    animation: progress_up_consulting 5s forwards;
+.rhombus-animate-consulting {
+    animation: progress-up-consulting 5s forwards;
 }
-.rhombus_animate_branding {
-    animation: progress_up_branding 5s forwards;
+.rhombus-animate-branding {
+    animation: progress-up-branding 5s forwards;
 }
-@-moz-keyframes progress_up_designing{
+@-moz-keyframes progress-up-designing{
     0% {height: 0;}
     100% {height: calc(8.875rem * .95);}
 }
-@-moz-keyframes progress_up_developing{
+@-moz-keyframes progress-up-developing{
     0% {height: 0;}
     100% {height: calc(8.875rem * .77);}
 }
-@-moz-keyframes progress_up_marketing{
+@-moz-keyframes progress-up-marketing{
     0% {height: 0;}
     100% {height: calc(8.875rem * .62);}
 }
-@-moz-keyframes progress_up_consulting{
+@-moz-keyframes progress-up-consulting{
     0% {height: 0;}
     100% {height: calc(8.875rem * .99);}
 }
-@-moz-keyframes progress_up_branding{
+@-moz-keyframes progress-up-branding{
     0% {height: 0;}
     100% {height: calc(8.875rem * .85);}
 }
-@-webkit-keyframes progress_up_designing{
+@-webkit-keyframes progress-up-designing{
     0% {height: 0;}
     100% {height: calc(8.875rem * .95);}
 }
-@-webkit-keyframes progress_up_developing{
+@-webkit-keyframes progress-up-developing{
     0% {height: 0;}
     100% {height: calc(8.875rem * .77);}
 }
-@-webkit-keyframes progress_up_marketing{
+@-webkit-keyframes progress-up-marketing{
     0% {height: 0;}
     100% {height: calc(8.875rem * .62);}
 }
-@-webkit-keyframes progress_up_consulting{
+@-webkit-keyframes progress-up-consulting{
     0% {height: 0;}
     100% {height: calc(8.875rem * .99);}
 }
-@-webkit-keyframes progress_up_branding{
+@-webkit-keyframes progress-up-branding{
     0% {height: 0;}
     100% {height: calc(8.875rem * .85);}
 }
