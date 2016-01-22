@@ -286,9 +286,10 @@ i {
     padding-top:4rem;
 }
 .about>.inner,
-.section_3>.inner{
+.features>.inner{
     display:table;
     width: 100vw;
+    min-width: 760px;
     height: 100%;
 }
 .black>i{
@@ -347,101 +348,173 @@ i {
     color: #1ab4ef;
 }
 
-/* ___________________portfolio section________________________ */
+/* ___________________features, portfolio section________________________ */
 
-.section_3, .section_4 {
-    /*min-height: 800px;*/
-    background: url(../img/fon.png) 0 0;
-    padding-top: 6.25rem;
+.features {
+    background: url(../img/bg-portfolio.png) 0 0;
+    padding: 6.25rem 0;
 }
-.section_4 {
-    padding-top: 8.2rem;
-}
-.menu_wrapper {
-    width: 100%;
-    /*display: table;*/
-    margin-bottom: 3rem;
-
-}
-.menu_portfolio{
-    display: table;
-    /*font-size: 0;*/
-}
-.menu_portfolio>li {
-    line-height: 2rem;
-    border: 1px solid black;
-    display:table-cell;
-    /*padding:10px;*/
-    text-align:center;
-    white-space:nowrap;
-}
-.menu_portfolio li a{
-    padding: 0;
-}
-.menu_portfolio li a:hover {
-    background: #dfdfdf;
-    border: 1px solid #dfdfdf;
-}
-.menu_portfolio img {
-    margin-bottom: calc((1rem - 24px) / 2);
-}
-
-                                                                /*Rhombus_photogallery*/
-
-.section_3>.inner>.text2,
-.section_4>.inner>.text2{
+.features-text,
+.skills-text{
     text-align: center;
     color: black;
     display: block;
 }
-.container_rhombus_photogallery {
-    max-width: 1160px;
-    width: 100%;
-    /*border: 2px solid #000000 ;*/
-    /*height: 1200px;*/
-    margin: 0 auto;
-    /*text-align: center;*/
+.menu-portfolio{
+    display: table;
+    margin-bottom: 3rem;
 }
-.rhombus-photogallery {
-    width: 22%;
-    /*height: 260px;*/
-    padding: 11% 0;
-    background: url("../img/wood_1.png") no-repeat 50% 50%;
-    transform: rotate(-45deg);
-    transform-origin: 50% 50%;
-    float:left;
+.menu-portfolio>li {
+    display:table-cell;
+    text-align:center;
+    white-space:nowrap;
+}
+.menu-portfolio a{
+    padding: 0;
+    line-height: 2.19rem;
     border: 1px solid black;
 }
-.rhombus-photogallery:nth-of-type(5n + 1), .rhombus-photogallery:nth-of-type(5n + 2){
+.menu-portfolio a:hover {
+     background: #dfdfdf;
+ }
+
+                           /*Rhombus_photogallery*/
+
+.features .container {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+}
+.portfolio-item {
+    width: 22%;
+    padding: 11% 0;
+    float:left;
+    border: 1px solid black;
+    transform: rotate(-45deg);
+    position: relative;
+    overflow: hidden;
+
+}
+.portfolio-img{
+    transform: rotate(45deg);
+    position: absolute;
+    width: 142%;
+    height: 142%;
+    top: -21%;
+    left: -21%;
+}
+.portfolio-img:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33,33,33,.7);
+}
+
+.portfolio-info {
+    display: none;
+    text-align: center;
+    height: 100%;
+    background: rgba(33,33,33,.95);
+    position: relative;
+}
+.portfolio-info p {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    display: block;
+    color:#f5f5f5;
+    padding-top: 45%;
+    margin-top: 0;
+}
+.portfolio-item i {
+    background-color: #cd2929;
+    margin-top: 0.7rem;
+}
+.portfolio-img:hover .portfolio-info {
+    display: block;
+}
+.portfolio-img:hover:before {
+    display: none;
+}
+.portfolio-button {
+    position: absolute;
+    bottom: 0.6rem;
+    right: calc(50% - 1.7rem);
+    width: 3.26rem;
+    height: 3.26rem;
+    border: 1px solid #cd2929;
+    display:block;
+    color: #cd2929;
+}
+.features .icon-plus:before {
+    line-height: 0;
+    display: inline-block;
+    margin: 0;
+    color: #cd2929;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 1.05rem;
+    left: 1.9rem;
+}
+.portfolio-button:hover{
+    background: #cd2929;
+    color: #ffffff;
+}
+.portfolio-button:hover .icon-plus:before {
+    color: #ffffff;
+}
+
+
+.portfolio-item:nth-of-type(5n + 1),
+.portfolio-item:nth-of-type(5n + 2){
     margin-right:  calc((11% * 1.42) - 11% + 3.1%);
     margin-top: calc((11% * 1.42) - 11%);
     margin-left: calc((11% * 1.42) - 11%);
 }
-.rhombus-photogallery:nth-of-type(5n + 3){
+.portfolio-item:nth-of-type(5n + 3){
     margin-top: calc((11% * 1.42) - 11%);
     margin-left: calc((11% * 1.42) - 11%);
 }
 
 
 
-.rhombus-photogallery:nth-of-type(5n + 4){
+.portfolio-item:nth-of-type(5n + 4){
     margin-right:  calc((11% * 1.42) - 11% + 3.1%);
     margin-left: calc((11% * 1.42) - 11% + (11% * 1.42) + 1.55%);
     margin-top: calc((((11% * 1.42) - 11%)) * (-1));
 }
-.rhombus-photogallery:nth-of-type(5n + 5){
+.portfolio-item:nth-of-type(5n + 5){
     margin-top: calc((((11% * 1.42) - 11%)) * (-1));
     margin-left: calc((11% * 1.42) - 11%);
 
 }
-.rhombus-photogallery:nth-of-type(6), .rhombus-photogallery:nth-of-type(7), .rhombus-photogallery:nth-of-type(8),
-.rhombus-photogallery:nth-of-type(11), .rhombus-photogallery:nth-of-type(12), .rhombus-photogallery:nth-of-type(13){
+.portfolio-item:nth-of-type(6),
+.portfolio-item:nth-of-type(7),
+.portfolio-item:nth-of-type(8),
+.portfolio-item:nth-of-type(11),
+.portfolio-item:nth-of-type(12),
+.portfolio-item:nth-of-type(13){
     margin-top: calc((((11% * 1.42) - 11%)) * (-1));
 }
 
+.portfolio-img:nth-of-type(1){
+     background: url("../img/wood.jpg") no-repeat 50% 50%;
+     background-size: cover;
+ }
+.portfolio-img:nth-of-type(2){
+    background: url("../img/wood.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
                                                   /*Rhombus_progress*/
-.section_4 {
+.skills {
+    background: url(../img/bg-portfolio.png) 0 0;
     min-height: 100vh;
+    padding-top: 8.2rem;
     padding-bottom: 2.5rem;
 }
 .rhombus_wrap{
@@ -689,7 +762,7 @@ i {
 
 @media screen and (max-width: 991px) {
     .menu,
-    .menu_portfolio,
+    .menu-portfolio,
     .scroll,
     .owl-prev,
     .owl-next{
@@ -699,7 +772,7 @@ i {
     .header-menu-small{
         display: block;
     }
-    .menu-wrapper {
+    .menu-portfolio {
         margin-bottom: 1rem;
     }
     html {
