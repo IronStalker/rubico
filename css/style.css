@@ -376,7 +376,12 @@ i {
 }
 .menu-portfolio a:hover {
      background: #dfdfdf;
+    color: #000000;
  }
+.menu-portfolio .active {
+    color: white;
+    background-color: #000000;
+}
 
                            /*Rhombus_photogallery*/
 
