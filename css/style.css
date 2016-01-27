@@ -567,24 +567,24 @@ i {
     font-weight: bold;
 }
 .rhombus-animate-designing {
-    -webkit-animation: progress-up-designing 5s forwards;
-    animation: progress-up-designing 5s forwards;
+    -webkit-animation: progress-up-designing 5s forwards paused;
+    animation: progress-up-designing 5s forwards paused;
 }
 .rhombus-animate-developing {
-    -webkit-animation: progress-up-developing 5s forwards;
-    animation: progress-up-developing 5s forwards;
+    -webkit-animation: progress-up-developing 5s forwards paused;
+    animation: progress-up-developing 5s forwards paused;
 }
 .rhombus-animate-marketing {
-    -webkit-animation: progress-up-marketing 5s forwards;
-    animation: progress-up-marketing 5s forwards;
+    -webkit-animation: progress-up-marketing 5s forwards paused;
+    animation: progress-up-marketing 5s forwards paused;
 }
 .rhombus-animate-consulting {
-    -webkit-animation: progress-up-consulting 5s forwards;
-    animation: progress-up-consulting 5s forwards;
+    -webkit-animation: progress-up-consulting 5s forwards paused;
+    animation: progress-up-consulting 5s forwards paused;
 }
 .rhombus-animate-branding {
-    -webkit-animation: progress-up-branding 5s forwards;
-    animation: progress-up-branding 5s forwards;
+    -webkit-animation: progress-up-branding 5s forwards paused;
+    animation: progress-up-branding 5s forwards paused;
 }
 @-webkit-keyframes progress-up-designing{
     0% {transform: rotate(45deg) translateY(0);}
@@ -652,20 +652,20 @@ i {
     text-transform: uppercase;
 }
 .progress-1{
-    -webkit-animation: progress-1 5s forwards;
-    animation: progress-1 5s forwards;
+    -webkit-animation: progress-1 5s forwards paused;
+    animation: progress-1 5s forwards paused;
 }
 .progress-2{
-    -webkit-animation: progress-2 5s forwards;
-    animation: progress-2 5s forwards;
+    -webkit-animation: progress-2 5s forwards paused;
+    animation: progress-2 5s forwards paused;
 }
 .progress-3{
-    -webkit-animation: progress-3 5s forwards;
-    animation: progress-3 5s forwards;
+    -webkit-animation: progress-3 5s forwards paused;
+    animation: progress-3 5s forwards paused;
 }
 .progress-4{
-    -webkit-animation: progress-4 5s forwards;
-    animation: progress-4 5s forwards;
+    -webkit-animation: progress-4 5s forwards paused;
+    animation: progress-4 5s forwards paused;
 }
 @-webkit-keyframes progress-1 {
     0% {width: 0;}
@@ -733,6 +733,10 @@ i {
 .percent{
     float: right;
     margin-right: 1.3rem;
+}
+.animation-run {
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
 }
 
                                                                     /*Media Screen*/

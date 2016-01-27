@@ -12,4 +12,11 @@ $(document).ready(function(){
         $.scrollTo(idscroll, 1000);
         return false;
     });
+
+    $('.animation-wrap').one('inview', function (event, isInView) {
+        if (isInView) {
+            $('.rhombus-animate').addClass('animation-run');
+            $('.progress').addClass('animation-run');
+        }
+    });
 });
