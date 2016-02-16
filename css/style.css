@@ -12,13 +12,13 @@ html {
     max-width: 1920px;
     min-width: 760px;
     margin: 0 auto;
-   }
-.inner{
-        max-width: 1200px;
-        width: 100%;
-        margin: 0 auto;
-        position: relative;
-    }
+}
+.inner {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
 
 /* _________________    header_______________________ */
 
@@ -40,10 +40,27 @@ html {
     top:1.313rem;
     left: 0.9375rem;
 }
-.logo > img,
-.logo-white > img {
-    width:8rem;
-    height:1.688rem;
+
+/* ________________sprite_________________ */
+
+.sprite {
+    background: url(../img/spritesheet.png) no-repeat;
+    display: block;
+}
+.sprite-bg-portfolio {
+    width: 21px;
+    height: 21px;
+    background: -5px -5px repeat;
+}
+.sprite-logo {
+    width: 128px;
+    height: 27px;
+    background-position: -5px -36px;
+}
+.sprite-logo-white {
+    width: 128px;
+    height: 27px;
+    background-position: -5px -73px;
 }
 
 /* ________menu_________ */
@@ -114,7 +131,6 @@ html {
     display: none;
 }
 
-
                           /*Section_1*/
 
 .section-home {
@@ -150,9 +166,7 @@ html {
     height: 30rem;
     border: 1px solid rgba(255, 255, 255, 0.8);
     display:inline-block;
-    /*margin: 4.375rem auto;*/
     position: relative;
-    /*transform: translate(112%, 50%) rotate(45deg);*/
 }
 .text-slider{
     color: white;
@@ -168,7 +182,6 @@ h2{
     line-height: 2.63rem;
     text-transform: uppercase;
     font-weight: 900;
-    /*margin: 10rem 3rem 0;*/
 }
 i {
     width: 0.5rem;
@@ -193,7 +206,6 @@ i {
     bottom: calc(50% + 2.33rem);
     color: #fff;
     z-index: 20;
-    /*background-color: red;*/
     width: 0;
     height: 0;
 
@@ -275,12 +287,11 @@ i {
 
 
 
-                                                            /*Section 2 About us*/
+                      /*Section 2 About us*/
 
 .about{
     height: 100vh;
     max-height: 1000px;
-    /*min-height: 550px;*/
     background-color: #cbcbcb;
     position: relative;
     padding-top:4rem;
@@ -325,11 +336,11 @@ i {
     vertical-align: middle;
 }
 .logo-white{
-    margin: 2.5rem 2.5rem 3rem;
-
+    margin: 2.5rem auto 3rem;
 }
 
 /* ______________social icons________________ */
+
 .social-icons .rh-button {
     margin: 0 1.8rem;
     transform: rotate(45deg);
@@ -342,7 +353,6 @@ i {
 }
 .social-icons [class*="icon-"]:before {
     transform: rotate(-45deg);
-    /*color:red;*/
 }
 .social-icons [class*="icon-"]:hover:before {
     color: #1ab4ef;
